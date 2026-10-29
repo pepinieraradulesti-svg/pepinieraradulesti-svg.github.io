@@ -730,6 +730,32 @@ body.nav-open{overflow:hidden}
 .planting-footer{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;margin-top:36px;color:var(--muted);font-size:.92rem}
 .planting-footer p{margin:0;max-width:44em}
 .planting-footer a:not(.btn){color:var(--forest);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+/* Large, uncropped photographs for the extended species library and planting guide. */
+.category-card-media .category-image--extended{height:100%;background:var(--cream)}
+.category-card-media .category-image--extended img{object-fit:contain}
+.guide-choosing>.btn{margin-top:28px}
+.guide-choosing .steps{column-gap:36px}
+@media(min-width:700px){.guide-choosing .steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.planting-story{display:grid;gap:clamp(36px,5vw,68px)}
+.planting-chapter{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:center;padding-top:clamp(32px,4vw,56px);border-top:1px solid var(--line)}
+.planting-chapter:first-child{padding-top:0;border:0}
+.planting-visual{margin:0;min-width:0}
+.planting-visual picture{border-radius:var(--radius);overflow:hidden;background:var(--cream)}
+.planting-visual img{width:100%;height:auto;object-fit:contain}
+.planting-visual figcaption{padding:14px 4px 0;color:var(--muted);font-size:.87rem;line-height:1.5}
+.planting-copy>h3{font:400 clamp(1.9rem,2.8vw,2.7rem)/1.12 var(--display);margin-bottom:24px}
+.planting-notes{display:grid;gap:20px}
+.planting-notes li+li{border-top:1px solid var(--line);padding-top:18px}
+.planting-notes h4{font:400 1.25rem/1.25 var(--serif);margin:0 0 8px;color:var(--forest)}
+.planting-notes p,.planting-extra{margin:0;color:var(--muted);font-size:1rem;line-height:1.65}
+.planting-extra{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.planting-recap{padding:0;border:1px solid var(--line);overflow:hidden}
+.planting-recap summary{padding:24px;cursor:pointer;font:400 1.3rem/1.35 var(--serif);min-height:64px;color:var(--forest)}
+.planting-recap[open] summary{border-bottom:1px solid var(--line);margin-bottom:20px}
+.planting-recap .planting-grid{padding:0 20px 20px}
+@media(min-width:700px){.planting-recap .planting-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.planting-recap .planting-grid article:last-child{grid-column:1/-1}}
+@media(min-width:900px){.planting-chapter{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,76px)}.planting-chapter:nth-child(even) .planting-visual{grid-column:2;grid-row:1}.planting-chapter:nth-child(even) .planting-copy{grid-column:1;grid-row:1}}
 .duo{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
 .duo-card{position:relative;padding:clamp(28px,4vw,52px);border-radius:var(--radius);background:var(--forest-2);border:1px solid var(--line-light);overflow:hidden}
 .duo-card h2{font-size:clamp(2rem,1.5rem + 2vw,3rem);margin-bottom:18px}
