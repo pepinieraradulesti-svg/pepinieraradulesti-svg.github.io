@@ -65,21 +65,19 @@ function protectPageControls() {
     entries.forEach(entry => entry.isIntersecting ? intersecting.add(entry.target) : intersecting.delete(entry.target));
     contactBar.classList.toggle('is-obstructing', intersecting.size > 0);
   }, {rootMargin:`-${Math.max(0, innerHeight - 100)}px 0px 0px 0px`,threshold:0});
-  $$('main a,main button,main input,main summary,.site-footer a').forEach(el=>contactObserver.observe(el));
+  $$('main a,main button,main input,main select,main summary,.site-footer a').forEach(el=>contactObserver.observe(el));
 }
 protectPageControls();
 addEventListener('resize', protectPageControls);
 
-// Named varieties only. Species discovery has its own independent controls.
-const filters = $$('[data-filter]');
-const products = $$('[data-product-category]');
-function filter(category) {
-  let count = 0;
-  for (const card of products) { const visible = category === 'Toate' || card.dataset.productCategory === category; card.hidden = !visible; if (visible) count++; }
-  filters.forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.filter === category)));
-  $('#filter-status').textContent = `${count} ${count === 1 ? 'rezultat' : 'rezultate'} pentru ${category.toLowerCase()}.`;
+// Căutarea soiurilor rămâne independentă de cea a categoriilor.
+const varietyCategory=$('#variety-category'),varietySearch=$('#variety-search');
+function filterVarieties(){
+ const category=varietyCategory.value,term=normalize(varietySearch.value);let count=0;
+ $$('[data-product-category]').forEach(card=>{card.hidden=!((category==='Toate'||card.dataset.productCategory===category)&&normalize(card.dataset.productName).includes(term));if(!card.hidden)count++;});
+ $('#filter-status').textContent=count?`${count} rezultate.`:'Nu am găsit soiul. Încearcă alt nume sau toate categoriile.';
 }
-filters.forEach(btn => btn.addEventListener('click', () => filter(btn.dataset.filter)));
+varietyCategory?.addEventListener('change',filterVarieties);varietySearch?.addEventListener('input',filterVarieties);
 
 const speciesSearch = $('#species-search');
 const speciesFilters = $$('[data-species-filter]');
