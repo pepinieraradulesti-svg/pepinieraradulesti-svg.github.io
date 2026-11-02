@@ -992,3 +992,38 @@ main,.site-footer{overflow-x:clip}
 .variety-photo .photographic-surface{height:auto;max-height:580px;aspect-ratio:4/3}.variety-photo .catalog-photograph{height:100%;aspect-ratio:4/3}.product-media .photographic-surface{height:100%}.variety-media .photographic-surface{height:100%;aspect-ratio:inherit}.pill-thumb .photographic-surface{aspect-ratio:1}.type-card a{overflow-wrap:anywhere}
 @media(min-width:1100px){#soiuri .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.variety-photo .photographic-surface,.variety-photo .catalog-photograph{aspect-ratio:3/2;max-height:none}.variety-photo{overflow:hidden}}
+
+/* Cultivar galleries: photographs remain whole; only their background fills the frame. */
+.cultivar-gallery{min-width:0;align-self:start}
+.variety-layout:has(.cultivar-heading){gap:24px}
+.cultivar-heading{min-width:0}.cultivar-heading h1{font-size:clamp(2.4rem,1.5rem + 4vw,5rem);margin-bottom:0}.cultivar-heading .eyebrow{margin-bottom:16px}
+.cultivar-gallery .variety-photo{max-width:none;margin:0;border-radius:24px}
+.cultivar-photo-main{position:relative;display:block;width:100%;padding:0;text-align:left;border-radius:inherit}
+.cultivar-expand{position:absolute;right:14px;bottom:14px;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:24px;background:#142a1b;color:#fff;font-size:.85rem}
+.cultivar-expand svg{width:18px;height:18px}
+.cultivar-previews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.cultivar-previews button{overflow:hidden;text-align:left;border:1px solid var(--line);border-radius:14px;background:var(--sand);min-width:0}
+.cultivar-previews picture{display:block;aspect-ratio:2/1;background:#e9e9df}
+.cultivar-previews img{display:block;width:100%;height:100%;object-fit:contain}
+.cultivar-previews span{display:block;padding:10px 12px;font-size:.88rem;font-weight:600}
+.cultivar-gallery-hint{margin:12px 0 0;font-size:.85rem;color:var(--muted)}
+.variety-card .variety-more{margin-top:auto;padding-top:12px}
+.cultivar-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin:22px 0}
+.cultivar-facts>div{padding:14px 0;border-top:1px solid var(--line);min-width:0}
+.cultivar-facts dt{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--moss);margin-bottom:6px;font-weight:700}
+.cultivar-facts dd{margin:0;font-size:.98rem;line-height:1.55;overflow-wrap:anywhere}
+.cultivar-share{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.cultivar-share>p{margin:0 0 10px;font:1.25rem var(--serif)}
+.cultivar-share-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cultivar-share-actions .btn{padding:12px 16px;min-height:46px;font-size:.85rem}
+.cultivar-share input{display:block;width:100%;min-width:0;padding:10px 12px;margin-top:10px;font-size:.8rem;border:1px solid var(--line);border-radius:8px;background:#fffdf6;color:var(--forest)}
+#share-status{display:block;color:var(--moss);font-size:.85rem;margin-top:6px}
+.cultivar-sources{margin-top:18px;color:var(--muted);font-size:.85rem}
+.cultivar-sources summary{cursor:pointer;padding:12px 0;font-weight:600}
+.cultivar-sources ul{padding-left:20px;overflow-wrap:anywhere}.cultivar-sources li{margin:10px 0}
+.photo-zoom{display:grid;place-items:center;min-width:46px;height:46px;border:1px solid rgba(255,255,255,.4);border-radius:50%;font-size:1.5rem;color:#fff}
+.dialog-toolbar:has(.photo-zoom){grid-template-columns:auto 1fr auto auto}
+.photo-stage.is-zoomed{display:block;overflow:auto;touch-action:pan-x pan-y}
+.photo-stage.is-zoomed #expanded-photo{width:180%;height:auto;max-width:none;max-height:none;object-fit:contain}
+@media(min-width:900px){.variety-layout:has(.cultivar-gallery){column-gap:clamp(28px,4vw,64px);row-gap:0;grid-template-areas:"gallery heading" "gallery info";grid-template-rows:auto 1fr}.cultivar-heading{grid-area:heading;margin-bottom:22px}.cultivar-gallery{grid-area:gallery;position:sticky;top:calc(var(--header) + 18px)}.variety-info{grid-area:info}}
+@media(max-width:600px){.cultivar-facts{gap:0 16px}.cultivar-facts dd{font-size:.9rem}.cultivar-expand{padding:8px 12px}.dialog-toolbar:has(.photo-zoom){gap:6px;padding:10px}.dialog-toolbar p{font-size:.95rem}.cultivar-previews span{font-size:.8rem;padding:10px}.variety-hero:has(.cultivar-gallery){padding-bottom:36px}}
