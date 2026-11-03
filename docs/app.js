@@ -65,7 +65,7 @@ function protectPageControls() {
     entries.forEach(entry => entry.isIntersecting ? intersecting.add(entry.target) : intersecting.delete(entry.target));
     contactBar.classList.toggle('is-obstructing', intersecting.size > 0);
   }, {rootMargin:`-${Math.max(0, innerHeight - 100)}px 0px 0px 0px`,threshold:0});
-  $$('main a,main button,main input,main select,main summary,.site-footer a').forEach(el=>contactObserver.observe(el));
+  $$('main a,main button,main input,main select,main summary,main video,.site-footer a').forEach(el=>contactObserver.observe(el));
 }
 protectPageControls();
 addEventListener('resize', protectPageControls);
@@ -201,9 +201,69 @@ if (journeySteps.length && 'IntersectionObserver' in window) {
   journeySteps.forEach(s => stepObserver.observe(s));
 }
 
-// Only one video plays at a time.
+// Video files are attached only on an explicit play request; one stream at a time.
 const videos = $$('video');
-videos.forEach(video => video.addEventListener('play', () => videos.forEach(other => { if (other !== video) other.pause(); })));
+const videoPositions = new WeakMap();
+function releaseVideo(video) {
+  const source = $('source[data-src]', video);
+  if (!source?.hasAttribute('src')) { video.pause(); return; }
+  videoPositions.set(video, video.ended ? 0 : video.currentTime);
+  video.pause(); source.removeAttribute('src'); video.controls = false; video.load();
+  const start = $('[data-video-play]', video.closest('.video-card'));
+  if (start) { start.hidden = false; start.disabled = false; }
+}
+videos.forEach(video => {
+  const card = video.closest('.video-card');
+  const start = card && $('[data-video-play]', card);
+  const status = card && $('.video-status', card);
+  const fallback = card && $('.video-fallback', card);
+  start?.addEventListener('click', async () => {
+    videos.forEach(other => { if (other !== video) releaseVideo(other); });
+    status.textContent = ''; fallback.hidden = true; start.disabled = true;
+    video.controls = true;
+    const source = $('source[data-src]', video);
+    if (!source.hasAttribute('src')) {
+      source.src = source.dataset.src;
+      video.addEventListener('loadedmetadata', () => {
+        const saved = videoPositions.get(video) || 0;
+        if (saved > 0 && saved < video.duration - .5) video.currentTime = saved;
+      }, {once:true});
+      video.load();
+    }
+    else if (video.error || video.networkState === 3) video.load();
+    try { await video.play(); }
+    catch (error) {
+      if (error.name !== 'AbortError') {
+        status.textContent = 'Clipul nu a pornit. Încearcă din nou sau deschide-l separat.';
+        video.controls = false;
+        fallback.hidden = false;
+      }
+    } finally { start.disabled = false; }
+  });
+  video.addEventListener('play', () => {
+    videos.forEach(other => { if (other !== video) releaseVideo(other); });
+    if (start) start.hidden = true;
+  });
+  const showVideoError = () => {
+    if (!start || !$('source[src]', video)) return;
+    start.hidden = false; start.disabled = false;
+    video.controls = false;
+    status.textContent = 'Clipul nu s-a încărcat. Încearcă din nou sau deschide-l separat.';
+    fallback.hidden = false;
+  };
+  video.addEventListener('error', showVideoError);
+  $('source[data-src]', video)?.addEventListener('error', showVideoError);
+});
+$$('[data-video-filter]').forEach(button => button.addEventListener('click', () => {
+  const filter = button.dataset.videoFilter;
+  $$('[data-video-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+  $$('[data-video-section]').forEach(section => {
+    section.hidden = filter !== 'toate' && section.dataset.videoSection !== filter;
+    if (section.hidden) $$('video', section).forEach(releaseVideo);
+  });
+  $('#video-gallery-status').textContent = filter === 'toate' ? 'Toate videoclipurile.' : button.textContent;
+}));
+document.addEventListener('visibilitychange', () => { if (document.hidden) videos.forEach(v => v.pause()); });
 
 // Scroll storytelling: elements reveal as they enter, siblings in a grid follow each other (max 0.45 s).
 // Content is visible without JavaScript or with reduced motion.
