@@ -1064,6 +1064,13 @@ main,.site-footer{overflow-x:clip}
 .site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:transparent;border:0;color:var(--forest)}
 .site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark svg>circle{fill:transparent}
 .site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark svg>g{stroke:currentColor}
+/* A solid mobile header keeps the emblem and lettering clear while scrolling. */
+@media(max-width:1079px){
+  .site-header.is-scrolled:not(.menu-active){background:#faf7f0;backdrop-filter:none;-webkit-backdrop-filter:none;color:var(--forest)}
+  .site-header.is-scrolled:not(.menu-active) .brand{color:var(--forest)}
+  .site-header.is-scrolled:not(.menu-active) .brand-mark{flex:none;width:44px;height:44px}
+  .site-header.is-scrolled:not(.menu-active) .brand-text small{font-size:10px;letter-spacing:.16em;color:#183c29}
+}
 
 /* Clear responsive covers; the unchanged MP4 is attached only after explicit play. */
 .video-cover{position:absolute;inset:0;display:block;pointer-events:none;background:#13201a}
