@@ -1060,6 +1060,10 @@ main,.site-footer{overflow-x:clip}
 /* Keep the approved two-leaf emblem legible in every header/footer state. */
 .site-header .brand-mark,.site-footer .brand-mark,.site-header.is-scrolled .brand-mark,.site-header.menu-active .brand-mark,.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:#15281c;color:#e0c896;border:0}
 .site-header.is-scrolled:not(.menu-active) .brand-text small{color:#183c29}
+/* Homepage: retain the original outline, transparent over the hero; solid on scroll. */
+.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:transparent;border:0;color:var(--forest)}
+.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark svg>circle{fill:transparent}
+.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark svg>g{stroke:currentColor}
 
 /* Clear responsive covers; the unchanged MP4 is attached only after explicit play. */
 .video-cover{position:absolute;inset:0;display:block;pointer-events:none;background:#13201a}
