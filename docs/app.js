@@ -26,6 +26,16 @@ $$('.has-sub').forEach(item => {
   item.addEventListener('focusin', load, {once:true});
 });
 
+// The blurred surround reuses the photograph already loaded by picture.
+// No CSS background downloads for all offscreen catalog cards.
+$$('.photographic-surface').forEach(surface => {
+  const image=$('picture img',surface);
+  if (!image) return;
+  const sync=()=>{if(image.naturalWidth) surface.style.setProperty('--photograph', `url(${JSON.stringify(image.currentSrc||image.src)})`)};
+  image.addEventListener('load',sync);
+  if(image.complete) sync();
+});
+
 // Pointer spotlight on photo cards (mouse only).
 if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
   $$('[data-spotlight]').forEach(card => card.addEventListener('pointermove', e => {
@@ -38,18 +48,54 @@ if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
 // Mobile menu.
 const toggle = $('.menu-toggle');
 const nav = $('#site-nav');
-function setMenu(open) {
+const menuBackground = new Map();
+function setMenu(open, {restoreFocus=true}={}) {
   toggle.setAttribute('aria-expanded', String(open));
   toggle.setAttribute('aria-label', open ? 'Închide meniul' : 'Deschide meniul');
   nav.classList.toggle('is-open', open);
   header.classList.toggle('menu-active', open);
   document.body.classList.toggle('nav-open', open);
+  if (open) {
+    for (const el of $$('main,.site-footer,.mobile-contact,.site-header .brand,.header-call')) {
+      if (!menuBackground.has(el)) menuBackground.set(el, el.inert);
+      el.inert = true;
+    }
+    nav.inert = false;
+    const focusMenu = () => {
+      if (!nav.classList.contains('is-open')) return;
+      const first=$('.nav-link',nav);
+      if (!first || getComputedStyle(first).visibility !== 'visible') { requestAnimationFrame(focusMenu); return; }
+      first.focus({preventScroll:true});
+      if (document.activeElement!==first) requestAnimationFrame(focusMenu);
+    };
+    requestAnimationFrame(focusMenu);
+  } else {
+    for (const [el, inert] of menuBackground) el.inert = inert;
+    menuBackground.clear();
+    nav.inert = !matchMedia('(min-width:1080px)').matches;
+    if (restoreFocus) toggle.focus({preventScroll:true});
+  }
 }
 if (toggle && nav) {
+  nav.inert = !matchMedia('(min-width:1080px)').matches;
   toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
-  nav.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); toggle.focus(); } });
-  matchMedia('(min-width: 1080px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+  nav.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false, {restoreFocus:false}); });
+  document.addEventListener('keydown', e => {
+    if (!nav.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { e.preventDefault(); setMenu(false); }
+    if (e.key === 'Tab') {
+      const items=[...$$('a[href]:not([tabindex="-1"]),button:not([disabled])',nav),toggle].filter(el=>el.getClientRects().length&&getComputedStyle(el).visibility!=='hidden');
+      const index=items.indexOf(document.activeElement);
+      if (index===-1 || (!e.shiftKey&&index===items.length-1) || (e.shiftKey&&index===0)) {
+        e.preventDefault(); items[e.shiftKey?items.length-1:0]?.focus();
+      }
+    }
+  });
+  matchMedia('(min-width:1080px)').addEventListener('change', () => {
+    const inside=nav.contains(document.activeElement);
+    setMenu(false,{restoreFocus:false});
+    if (nav.inert&&inside) toggle.focus({preventScroll:true});
+  });
 }
 
 // Keep fixed contact actions clear of page controls. Observe only the bottom strip;
@@ -202,6 +248,22 @@ if (journeySteps.length && 'IntersectionObserver' in window) {
 }
 
 // Video files are attached only on an explicit play request; one stream at a time.
+function loadVideoCover(cover) {
+  if (!cover || cover.dataset.loaded) return;
+  cover.dataset.loaded='true';
+  $$('source[data-srcset]',cover).forEach(source=>{source.srcset=source.dataset.srcset;source.removeAttribute('data-srcset')});
+  const image=$('img',cover);
+  image.srcset=image.dataset.srcset; image.src=image.dataset.src;
+  image.removeAttribute('data-src'); image.removeAttribute('data-srcset');
+}
+const videoCovers=$$('[data-video-cover]');
+if ('IntersectionObserver' in window) {
+  const coverObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting){loadVideoCover(entry.target);coverObserver.unobserve(entry.target)}
+  }),{rootMargin:'300px 0px'});
+  videoCovers.forEach(cover=>coverObserver.observe(cover));
+} else videoCovers.forEach(loadVideoCover);
+
 const videos = $$('video');
 const videoPositions = new WeakMap();
 function releaseVideo(video) {
@@ -209,6 +271,7 @@ function releaseVideo(video) {
   if (!source?.hasAttribute('src')) { video.pause(); return; }
   videoPositions.set(video, video.ended ? 0 : video.currentTime);
   video.pause(); source.removeAttribute('src'); video.controls = false; video.load();
+  video.closest('.video-card')?.classList.remove('is-playing');
   const start = $('[data-video-play]', video.closest('.video-card'));
   if (start) { start.hidden = false; start.disabled = false; }
 }
@@ -220,6 +283,9 @@ videos.forEach(video => {
   start?.addEventListener('click', async () => {
     videos.forEach(other => { if (other !== video) releaseVideo(other); });
     status.textContent = ''; fallback.hidden = true; start.disabled = true;
+    const cover=$('[data-video-cover]',card); loadVideoCover(cover);
+    const coverImage=cover && $('img',cover);
+    if(coverImage) video.poster=coverImage.currentSrc||coverImage.src;
     video.controls = true;
     const source = $('source[data-src]', video);
     if (!source.hasAttribute('src')) {
@@ -241,10 +307,12 @@ videos.forEach(video => {
     } finally { start.disabled = false; }
   });
   video.addEventListener('play', () => {
+    card?.classList.add('is-playing');
     videos.forEach(other => { if (other !== video) releaseVideo(other); });
     if (start) start.hidden = true;
   });
   const showVideoError = () => {
+    card?.classList.remove('is-playing');
     if (!start || !$('source[src]', video)) return;
     start.hidden = false; start.disabled = false;
     video.controls = false;

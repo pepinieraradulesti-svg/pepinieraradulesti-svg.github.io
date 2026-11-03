@@ -1060,3 +1060,16 @@ main,.site-footer{overflow-x:clip}
 /* Keep the approved two-leaf emblem legible in every header/footer state. */
 .site-header .brand-mark,.site-footer .brand-mark,.site-header.is-scrolled .brand-mark,.site-header.menu-active .brand-mark,.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:#15281c;color:#e0c896;border:0}
 .site-header.is-scrolled:not(.menu-active) .brand-text small{color:#183c29}
+
+/* Clear responsive covers; the unchanged MP4 is attached only after explicit play. */
+.video-cover{position:absolute;inset:0;display:block;pointer-events:none;background:#13201a}
+.video-cover img{width:100%;height:100%;object-fit:contain}
+.video-card.is-playing .video-cover{visibility:hidden}
+.catalog-back-to-search{display:none}
+@media(max-width:700px){
+  #soiuri{overflow:clip visible}
+  .variety-controls{position:sticky;top:var(--header);z-index:25;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:10px;background:var(--forest);padding:12px 0;margin-bottom:10px}
+  .variety-controls label{font-size:.8rem}
+  .variety-controls input,.variety-controls select{padding:10px 8px;min-height:48px;font-size:1rem}
+  .catalog-back-to-search{display:inline-flex;min-height:36px;align-items:center;color:var(--gold-soft);margin-bottom:20px;font-size:.85rem}
+}
