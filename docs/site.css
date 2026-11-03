@@ -100,7 +100,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .header-inner{display:flex;align-items:center;gap:20px;min-height:var(--header);transition:min-height .45s var(--ease)}
 .brand{display:flex;align-items:center;gap:12px;color:var(--forest);flex:none}
 .brand-mark{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--forest);color:var(--gold-soft);transition:width .45s var(--ease),height .45s var(--ease),background .3s,color .3s,border-color .3s}
-.brand-mark svg{width:24px;height:34px}
+.brand-mark svg{width:100%;height:100%}
 .brand-text{font:1.28rem/1.05 var(--display);letter-spacing:-.005em}
 .brand-text small{display:block;margin-top:5px;font:600 .58rem/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);transition:opacity .3s,height .45s,margin .45s}
 .brand--light{color:#fff}.brand--light .brand-mark{background:var(--gold-soft);color:var(--forest)}.brand--light small{color:var(--gold-soft)}
@@ -1058,5 +1058,5 @@ main,.site-footer{overflow-x:clip}
 @media(max-width:600px){.cultivar-facts{gap:0 16px}.cultivar-facts dd{font-size:.9rem}.cultivar-expand{padding:8px 12px}.dialog-toolbar:has(.photo-zoom){gap:6px;padding:10px}.dialog-toolbar p{font-size:.95rem}.cultivar-previews span{font-size:.8rem;padding:10px}.variety-hero:has(.cultivar-gallery){padding-bottom:36px}}
 
 /* Keep the approved two-leaf emblem legible in every header/footer state. */
-.site-header .brand-mark,.site-footer .brand-mark,.site-header.is-scrolled .brand-mark,.site-header.menu-active .brand-mark,.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:#102f23;color:#e5ca86;border:1px solid rgba(229,202,134,.3)}
+.site-header .brand-mark,.site-footer .brand-mark,.site-header.is-scrolled .brand-mark,.site-header.menu-active .brand-mark,.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:#15281c;color:#e0c896;border:0}
 .site-header.is-scrolled:not(.menu-active) .brand-text small{color:#183c29}
