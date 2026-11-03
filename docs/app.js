@@ -132,6 +132,9 @@ if (dialog) {
     const list = visible(); index = (i + list.length) % list.length;
     const btn = list[index], image = $('#expanded-photo');
     const stage = $('.photo-stage');
+    stage.classList.remove('is-zoomed');
+    const zoomButton = $('.photo-zoom');
+    if (zoomButton) { zoomButton.setAttribute('aria-pressed','false'); zoomButton.setAttribute('aria-label','Mărește detaliile'); zoomButton.textContent='+'; }
     stage.setAttribute('aria-busy','true');
     image.onload = image.onerror = () => stage.setAttribute('aria-busy','false');
     image.src = btn.dataset.photo; image.alt = btn.querySelector('img').alt;
@@ -150,6 +153,12 @@ if (dialog) {
   thumbnails.forEach(thumb => thumb.addEventListener('click', () => show(visible().indexOf(photos[Number(thumb.dataset.photoIndex)]))));
   $('.photo-prev').addEventListener('click', () => show(index - 1));
   $('.photo-next').addEventListener('click', () => show(index + 1));
+  $('.photo-zoom')?.addEventListener('click', event => {
+    const zoomed=$('.photo-stage').classList.toggle('is-zoomed');
+    event.currentTarget.setAttribute('aria-pressed',String(zoomed));
+    event.currentTarget.setAttribute('aria-label',zoomed?'Revino la imaginea întreagă':'Mărește detaliile');
+    event.currentTarget.textContent=zoomed?'−':'+';
+  });
   dialog.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show(index + (e.key === 'ArrowRight' ? 1 : -1)); }
     if (e.key === 'Home' || e.key === 'End') { e.preventDefault(); show(e.key==='Home'?0:visible().length-1); }
@@ -160,6 +169,26 @@ if (dialog) {
     if (e.target === dialog && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) dialog.close();
   });
   dialog.addEventListener('close', () => { document.body.classList.remove('dialog-open'); if(opener&&!opener.hidden)opener.focus({preventScroll:true}); });
+}
+
+// Share only the permanent public URL; clipboard failures leave a selectable link.
+const cultivarUrl = $('#cultivar-url');
+if (cultivarUrl) {
+  const copyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(cultivarUrl.value);
+      $('#share-status').textContent='Link copiat. Îl poți trimite mai departe.';
+    } catch {
+      cultivarUrl.focus(); cultivarUrl.select();
+      $('#share-status').textContent='Selectează și copiază linkul din câmp.';
+    }
+  };
+  $('[data-copy-url]').addEventListener('click', copyLink);
+  $('[data-share-url]').addEventListener('click', async () => {
+    if (!navigator.share) { await copyLink(); return; }
+    try { await navigator.share({title:document.title,url:cultivarUrl.value}); }
+    catch (error) { if(error.name!=='AbortError') await copyLink(); }
+  });
 }
 
 // "Din pepinieră, până în grădina ta": the step in the middle of the screen is highlighted in the index.
