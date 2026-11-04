@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "revision": "4185eb19-a35a-4f6b-9608-87a5f8f436c1",
+  "posts": [
+    {
+      "id": "c691d115-758e-425a-bde0-7a4296f6ef2f",
+      "version": 1,
+      "template": "template-1",
+      "newsCategory": "fructe",
+      "varietyId": "mar--florina",
+      "kind": "variety",
+      "social": {
+        "og": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/og.jpg",
+        "story": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/story.jpg"
+      },
+      "category": "mar",
+      "title": "Florina",
+      "description": "Vă prezentăm soiul Florina de măr. Soi de măr prezent în sortimentul pomicol studiat în România. Alegerea portaltoiului și a partenerului de polenizare completează alegerea soiului.",
+      "created": "2026-11-04T13:16:14.878537Z",
+      "media": [
+        {
+          "id": "ghm-433946688",
+          "kind": "photo",
+          "digest": "44ef255035e7f96fc9034b4bf24f59cf884d6ca68458d6edd56e807ff8fd0821",
+          "files": [
+            {
+              "file": "ghm-433946688-640.webp",
+              "type": "image/webp",
+              "width": 640,
+              "height": 533,
+              "sha256": "faf6bb7dd3b765f4644201ff643d47526aeedb539e9879ad45e36e7884eb6ff4",
+              "bytes": 76158,
+              "assetId": 709576761,
+              "url": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/ghm-433946688-640.webp"
+            },
+            {
+              "file": "ghm-433946688-1600.webp",
+              "type": "image/webp",
+              "width": 800,
+              "height": 666,
+              "sha256": "4e28c3bd363d45dd6b7515e0183b10faf9532ab8d2da802c6808d1cd13831924",
+              "bytes": 108960,
+              "assetId": 709576829,
+              "url": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/ghm-433946688-1600.webp"
+            },
+            {
+              "file": "ghm-433946688-partajare.jpg",
+              "type": "image/jpeg",
+              "sha256": "fca3a5181356412aacc430798726892e158691efae3304f8b1600647b7015e3f",
+              "bytes": 138194,
+              "assetId": 709576870,
+              "url": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/ghm-433946688-partajare.jpg"
+            }
+          ],
+          "url": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/ghm-433946688-1600.webp",
+          "thumbnail": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/ghm-433946688-640.webp",
+          "poster": "https://github.com/pepinieraradulesti-svg/pepinieraradulesti-svg.github.io/releases/download/untagged-c374ffbf6beb725a6b08/ghm-433946688-partajare.jpg",
+          "width": 800,
+          "height": 666,
+          "smallWidth": 640,
+          "alt": "Florina"
+        }
+      ]
+    }
+  ],
+  "verificationPaths": [
+    "index.html",
+    "pomi-fructiferi/index.html",
+    "galerie-foto/index.html",
+    "pomi-fructiferi/mar/index.html",
+    "noutati/c691d115-758e-425a-bde0-7a4296f6ef2f/index.html",
+    "noutati/index.html",
+    "publications.css",
+    "pomi-fructiferi/mar/florina/index.html"
+  ]
+}
