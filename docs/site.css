@@ -1090,3 +1090,6 @@ main,.site-footer{overflow-x:clip}
   .variety-controls input,.variety-controls select{padding:10px 8px;min-height:48px;font-size:1rem}
   .catalog-back-to-search{display:inline-flex;min-height:36px;align-items:center;color:var(--gold-soft);margin-bottom:20px;font-size:.85rem}
 }
+
+/* Încadrare pentru a șasea rubrică în antetul desktop compact. */
+@media(min-width:1080px) and (max-width:1279px){.header-inner{gap:12px}.nav-link{padding-inline:8px;font-size:.88rem}.header-call{padding-inline:14px}}

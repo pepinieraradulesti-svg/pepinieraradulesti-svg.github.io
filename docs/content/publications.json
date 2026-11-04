@@ -66,16 +66,5 @@
         }
       ]
     }
-  ],
-  "verificationPaths": [
-    "index.html",
-    "pomi-fructiferi/index.html",
-    "galerie-foto/index.html",
-    "pomi-fructiferi/mar/index.html",
-    "noutati/c691d115-758e-425a-bde0-7a4296f6ef2f/index.html",
-    "noutati/index.html",
-    "pomi-fructiferi/mar/florina/index.html",
-    "media/publications/c691d115-758e-425a-bde0-7a4296f6ef2f/1/og.jpg",
-    "media/publications/c691d115-758e-425a-bde0-7a4296f6ef2f/1/story.jpg"
   ]
 }
