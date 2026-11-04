@@ -1058,7 +1058,7 @@ main,.site-footer{overflow-x:clip}
 @media(max-width:600px){.cultivar-facts{gap:0 16px}.cultivar-facts dd{font-size:.9rem}.cultivar-expand{padding:8px 12px}.dialog-toolbar:has(.photo-zoom){gap:6px;padding:10px}.dialog-toolbar p{font-size:.95rem}.cultivar-previews span{font-size:.8rem;padding:10px}.variety-hero:has(.cultivar-gallery){padding-bottom:36px}}
 
 /* Keep the approved two-leaf emblem legible in every header/footer state. */
-.site-header .brand-mark,.site-footer .brand-mark,.site-header.is-scrolled .brand-mark,.site-header.menu-active .brand-mark,.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:#15281c;color:#e0c896;border:0}
+.site-header .brand-mark,.site-footer .brand-mark,.site-header.is-scrolled .brand-mark,.site-header.menu-active .brand-mark,.site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:transparent;color:#e0c896;border:0}
 .site-header.is-scrolled:not(.menu-active) .brand-text small{color:#183c29}
 /* Homepage: retain the original outline, transparent over the hero; solid on scroll. */
 .site-header--on-light:not(.is-scrolled):not(.menu-active) .brand-mark{background:transparent;border:0;color:var(--forest)}
