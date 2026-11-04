@@ -1,0 +1,16 @@
+{
+  "name": "pepiniera-publisher-github",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "start": "node run.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  }
+}

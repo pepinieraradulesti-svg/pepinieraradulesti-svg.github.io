@@ -1,0 +1,362 @@
+[
+  {
+    "id": "mar--gold-spur",
+    "name": "Gold Spur",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Selecție din grupa Golden, cu port de tip spur. Portaltoiul și forma de conducere stabilesc spațiul necesar în livadă.",
+    "path": "/pomi-fructiferi/mar/gold-spur/"
+  },
+  {
+    "id": "mar--jonathan",
+    "name": "Jonathan",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Soi de măr originar din Statele Unite, apreciat pentru fructele de masă cu pulpă fină și aromă plăcută.",
+    "path": "/pomi-fructiferi/mar/jonathan/"
+  },
+  {
+    "id": "mar--florina",
+    "name": "Florina",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Soi de măr prezent în sortimentul pomicol studiat în România. Alegerea portaltoiului și a partenerului de polenizare completează alegerea soiului.",
+    "path": "/pomi-fructiferi/mar/florina/"
+  },
+  {
+    "id": "mar--idared",
+    "name": "Idared",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Soi obținut din Jonathan și Wagener, cu fructe ferme, potrivite pentru păstrare în condiții adecvate.",
+    "path": "/pomi-fructiferi/mar/idared/"
+  },
+  {
+    "id": "mar--starkrimson",
+    "name": "Starkrimson",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Selecție din grupa Red Delicious. Particularitățile de creștere se corelează cu portaltoiul și cu forma aleasă pentru coroană.",
+    "path": "/pomi-fructiferi/mar/starkrimson/"
+  },
+  {
+    "id": "mar--granny-smith",
+    "name": "Granny Smith",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Măr cu pieliță verde, pulpă fermă și gust acidulat. Are nevoie de un sezon suficient de cald pentru maturarea fructelor.",
+    "path": "/pomi-fructiferi/mar/granny-smith/"
+  },
+  {
+    "id": "par--napoca",
+    "name": "Napoca",
+    "category": "par",
+    "species": "Păr",
+    "description": "Soi românesc de păr, inclus în colecțiile și studiile pomicole naționale. Se alege împreună cu un portaltoi adaptat terenului.",
+    "path": "/pomi-fructiferi/par/napoca/"
+  },
+  {
+    "id": "par--favorita-lui-clapp",
+    "name": "Favorita lui Clapp",
+    "category": "par",
+    "species": "Păr",
+    "description": "Cunoscut internațional ca Clapp’s Favourite, este un păr de vară. Fructele se urmăresc atent în apropierea maturării.",
+    "path": "/pomi-fructiferi/par/favorita-lui-clapp/"
+  },
+  {
+    "id": "par--kieffer",
+    "name": "Kieffer",
+    "category": "par",
+    "species": "Păr",
+    "description": "Denumirea Kieffer apare și în colecții sub forma Kieffer Seedling. Pentru plantare contează compatibilitatea cu portaltoiul și polenizatorul.",
+    "path": "/pomi-fructiferi/par/kieffer/"
+  },
+  {
+    "id": "par--williams-galben",
+    "name": "Williams galben",
+    "category": "par",
+    "species": "Păr",
+    "description": "Forma galbenă a părului Williams, cunoscut și ca Bartlett. Fructele sunt apreciate pentru aromă și utilizarea la masă sau la preparate.",
+    "path": "/pomi-fructiferi/par/williams-galben/"
+  },
+  {
+    "id": "par--monica",
+    "name": "Monica",
+    "category": "par",
+    "species": "Păr",
+    "description": "Soi românesc de păr inclus în fondul de germoplasmă pomicolă. Lumina și drenajul bun susțin dezvoltarea pomului.",
+    "path": "/pomi-fructiferi/par/monica/"
+  },
+  {
+    "id": "par--lucas",
+    "name": "Beurré Alexandre Lucas",
+    "category": "par",
+    "species": "Păr",
+    "description": "Soi de păr păstrat în National Fruit Collection, cunoscut și sub numele Alexandre Lucas sau Lucas.",
+    "path": "/pomi-fructiferi/par/alexandre-lucas/"
+  },
+  {
+    "id": "par--novembra",
+    "name": "Novembra",
+    "category": "par",
+    "species": "Păr",
+    "description": "Păr cunoscut în literatura europeană și ca Nojabrskaja. Numele Xenia apare în asociere comercială cu acest soi.",
+    "path": "/pomi-fructiferi/par/novembra/"
+  },
+  {
+    "id": "gutui--bereczki",
+    "name": "Bereczki",
+    "category": "gutui",
+    "species": "Gutui",
+    "description": "Soi consacrat de gutui, cu denumirea Bereczki în literatura pomicolă. Fructele se folosesc frecvent la preparate de toamnă.",
+    "path": "/pomi-fructiferi/gutui/bereczki/"
+  },
+  {
+    "id": "prun--stanley",
+    "name": "Stanley",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Soi de prun inclus în sortimentul studiat de stațiunile pomicole din România. Recoltarea se adaptează maturării fructelor și utilizării lor.",
+    "path": "/pomi-fructiferi/prun/stanley/"
+  },
+  {
+    "id": "prun--diana",
+    "name": "Diana",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Soi românesc de prun creat la Pitești-Mărăcineni. Amplasamentul însorit și coroana aerisită sunt puncte de plecare pentru cultură.",
+    "path": "/pomi-fructiferi/prun/diana/"
+  },
+  {
+    "id": "prun--centenar",
+    "name": "Centenar",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Soi românesc de prun creat la Pitești-Mărăcineni și studiat în colecții pomicole. Portaltoiul influențează vigoarea pomului.",
+    "path": "/pomi-fructiferi/prun/centenar/"
+  },
+  {
+    "id": "prun--president",
+    "name": "President",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Soi de prun de origine străină, inclus în cercetările pomicole din România. Cerințele de polenizare se verifică înainte de asocierea în livadă.",
+    "path": "/pomi-fructiferi/prun/president/"
+  },
+  {
+    "id": "prun--tophit",
+    "name": "Tophit",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Soi de prun prezent în evaluările SCDP Bistrița. Adaptarea la locul de plantare se apreciază împreună cu portaltoiul și sistemul de conducere.",
+    "path": "/pomi-fructiferi/prun/tophit/"
+  },
+  {
+    "id": "prun--dagen",
+    "name": "D’Agen",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Soi tradițional de prun, inclus în sortimentele studiate în România. Fructele se pot valorifica diferit în funcție de maturare și pregătire.",
+    "path": "/pomi-fructiferi/prun/dagen/"
+  },
+  {
+    "id": "cais--mamaia",
+    "name": "Mamaia",
+    "category": "cais",
+    "species": "Cais",
+    "description": "Cais autofertil, cu pulpă portocalie, suculentă și aromată, care se desprinde de sâmbure. Pomul are vigoare medie.",
+    "path": "/pomi-fructiferi/cais/mamaia/"
+  },
+  {
+    "id": "cais--umberto",
+    "name": "Umberto",
+    "category": "cais",
+    "species": "Cais",
+    "description": "Soi de cais studiat în Dobrogea și inclus în sortimentul SCDP Constanța. Preferă un amplasament luminos, fără exces de apă.",
+    "path": "/pomi-fructiferi/cais/umberto/"
+  },
+  {
+    "id": "cais--nja-19",
+    "name": "NJA 19",
+    "category": "cais",
+    "species": "Cais",
+    "description": "Soi de cais cu maturare timpurie în studiile efectuate în zona Brăilei. Calendarul exact diferă după an și amplasament.",
+    "path": "/pomi-fructiferi/cais/nja-19/"
+  },
+  {
+    "id": "cais--nja-42",
+    "name": "NJA 42",
+    "category": "cais",
+    "species": "Cais",
+    "description": "Cais timpuriu, cu pulpă galben-portocalie, aromată, care se desprinde de sâmbure. Creșterile anuale pot fi lungi; coroana se conduce atent.",
+    "path": "/pomi-fructiferi/cais/nja-42/"
+  },
+  {
+    "id": "cais--dacia",
+    "name": "Dacia",
+    "category": "cais",
+    "species": "Cais",
+    "description": "Soi românesc de cais inclus în sortimentul pentru Dobrogea. Un loc bine ales reduce expunerea la aerul rece acumulat primăvara.",
+    "path": "/pomi-fructiferi/cais/dacia/"
+  },
+  {
+    "id": "piersic--cardinal",
+    "name": "Cardinal",
+    "category": "piersic",
+    "species": "Piersic",
+    "description": "Piersic cu pulpă galbenă. Udarea echilibrată și lumina în coroană susțin dezvoltarea fructelor.",
+    "path": "/pomi-fructiferi/piersic/cardinal/"
+  },
+  {
+    "id": "piersic--amalia",
+    "name": "Amalia",
+    "category": "piersic",
+    "species": "Piersic",
+    "description": "Soi de piersic prezentat în literatura SCDP Constanța. Ca la ceilalți piersici, reînnoirea lemnului roditor cere atenție.",
+    "path": "/pomi-fructiferi/piersic/amalia/"
+  },
+  {
+    "id": "piersic--redhaven",
+    "name": "Redhaven",
+    "category": "piersic",
+    "species": "Piersic",
+    "description": "Piersic autofertil, cu pulpă galbenă și sâmbure care se desprinde la maturitate. Fructele au o aromă intensă.",
+    "path": "/pomi-fructiferi/piersic/redhaven/"
+  },
+  {
+    "id": "nectarin--cora",
+    "name": "Cora",
+    "category": "nectarin",
+    "species": "Nectarină",
+    "description": "Nectarin extratimpuriu, autofertil, cu creștere viguroasă și fructe cu pieliță roșie-grena pe o mare parte a suprafeței.",
+    "path": "/pomi-fructiferi/nectarin/cora/"
+  },
+  {
+    "id": "nectarin--nectared-4",
+    "name": "Nectared 4",
+    "category": "nectarin",
+    "species": "Nectarină",
+    "description": "Nectarin cu pulpă galbenă, documentat în cercetările pentru sâmburoase. Lumina și o coroană aerisită ajută îngrijirea pomului.",
+    "path": "/pomi-fructiferi/nectarin/nectared-4/"
+  },
+  {
+    "id": "piersic-plat--filip",
+    "name": "Filip",
+    "category": "piersic-plat",
+    "species": "Piersic plat",
+    "description": "Piersic plat creat la SCDP Constanța și omologat în 2002. Are fructe aplatizate, cu pulpă albă.",
+    "path": "/pomi-fructiferi/piersic-plat/filip/"
+  },
+  {
+    "id": "visin--crisana-1",
+    "name": "Crișana",
+    "category": "visin",
+    "species": "Vișin",
+    "description": "Vișin cultivat pentru fructele sale acrișoare. Forma coroanei și tăierile se adaptează modului de rodire.",
+    "path": "/pomi-fructiferi/visin/crisana/"
+  },
+  {
+    "id": "visin--de-botosani",
+    "name": "De Botoșani",
+    "category": "visin",
+    "species": "Vișin",
+    "description": "Vișin din selecția pomicolă românească. Un loc luminos și o coroană aerisită ușurează îngrijirea și recoltarea.",
+    "path": "/pomi-fructiferi/visin/de-botosani/"
+  },
+  {
+    "id": "visin--schattenmorelle",
+    "name": "Schattenmorelle",
+    "category": "visin",
+    "species": "Vișin",
+    "description": "Vișin autofertil, cu fructe suculente și suc intens colorat. Gustul acidulat îl recomandă și pentru preparate.",
+    "path": "/pomi-fructiferi/visin/schattenmorelle/"
+  },
+  {
+    "id": "cires--germersdorf",
+    "name": "Germersdorf",
+    "category": "cires",
+    "species": "Cireș",
+    "description": "Soi de cireș cunoscut internațional și ca Germersdorfer. Este păstrat în colecții europene de resurse genetice pomicole.",
+    "path": "/pomi-fructiferi/cires/germersdorf/"
+  },
+  {
+    "id": "cires--kordia",
+    "name": "Kordia",
+    "category": "cires",
+    "species": "Cireș",
+    "description": "Soi consacrat de cireș, înscris în sortimentele europene de material de înmulțire. Pentru rodire se verifică un partener compatibil.",
+    "path": "/pomi-fructiferi/cires/kordia/"
+  },
+  {
+    "id": "cires--regina",
+    "name": "Regina",
+    "category": "cires",
+    "species": "Cireș",
+    "description": "Soi de cireș prezent în sortimentele europene de material pomicol. Compatibilitatea și suprapunerea înfloririi se aleg împreună.",
+    "path": "/pomi-fructiferi/cires/regina/"
+  },
+  {
+    "id": "cires--karina",
+    "name": "Karina",
+    "category": "cires",
+    "species": "Cireș",
+    "description": "Soi de cireș atestat în sortimentele europene. Nu este sinonim cu Kordia sau Regina; polenizarea se planifică pentru soiul concret.",
+    "path": "/pomi-fructiferi/cires/karina/"
+  },
+  {
+    "id": "cires--maxut",
+    "name": "Maxut",
+    "category": "cires",
+    "species": "Cireș",
+    "description": "Cireș cu fruct negru și gust amar, descris de SCDP Iași. Este distinct de cireșii cu fruct dulce.",
+    "path": "/pomi-fructiferi/cires/maxut/"
+  },
+  {
+    "id": "nuc--franquette",
+    "name": "Franquette",
+    "category": "nuc",
+    "species": "Nuc",
+    "description": "Soi francez de nuc, consemnat în literatura dendrologică. Are nevoie de spațiu pentru coroană și sol adânc, bine drenat.",
+    "path": "/nucifere/nuc/franquette/"
+  },
+  {
+    "id": "alun--urias-de-halle",
+    "name": "Uriaș de Halle",
+    "category": "alun",
+    "species": "Alun",
+    "description": "Alun cunoscut și ca Hallesche Riesennuss, cu creștere viguroasă și alune mari. Polenizarea se planifică prin asocierea unor soiuri compatibile.",
+    "path": "/nucifere/alun/urias-de-halle/"
+  },
+  {
+    "id": "zmeur--polka",
+    "name": "Polka",
+    "category": "zmeur",
+    "species": "Zmeur",
+    "description": "Zmeur remontant, cu fructe roșii pe tulpinile crescute în același an. Sistemul de tăiere se alege după modul de recoltare dorit.",
+    "path": "/arbusti-fructiferi/zmeur/polka/"
+  },
+  {
+    "id": "cires--valerii-cikalov",
+    "name": "Valerii Cikalov",
+    "category": "cires",
+    "species": "Cireș",
+    "description": "Cireș timpuriu, cu fructe roșu-închis. Locul de plantare și alegerea unui partener de polenizare se stabilesc împreună cu portaltoiul.",
+    "path": "/pomi-fructiferi/cires/valerii-cikalov/"
+  },
+  {
+    "id": "prun--record",
+    "name": "Record",
+    "category": "prun",
+    "species": "Prun",
+    "description": "Prun cu fructe mari, vânăt-închise și acoperite cu pruină. Alegerea portaltoiului și a partenerilor de polenizare se adaptează grădinii.",
+    "path": "/pomi-fructiferi/prun/record/"
+  },
+  {
+    "id": "mar--prima",
+    "name": "Prima",
+    "category": "mar",
+    "species": "Măr",
+    "description": "Soi de măr din programul de ameliorare PRI, cu fructe roșii pe fond galben-verzui. Portaltoiul și locul de plantare se aleg după condițiile grădinii.",
+    "path": "/pomi-fructiferi/mar/prima/"
+  }
+]

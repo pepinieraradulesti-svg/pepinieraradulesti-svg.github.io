@@ -1,0 +1,200 @@
+[
+  {
+    "id": "mar--redlove",
+    "cat": "mar",
+    "name": "Redlove",
+    "slug": "redlove",
+    "kind": "serie",
+    "photo": 1,
+    "manuscript": "Red Love",
+    "status": "public"
+  },
+  {
+    "id": "par--williams-rosu",
+    "cat": "par",
+    "name": "Williams roșu",
+    "slug": "williams-rosu",
+    "kind": "forma",
+    "photo": 1,
+    "manuscript": "Williams roșu",
+    "status": "public"
+  },
+  {
+    "id": "cires--cires-de-mai",
+    "cat": "cires",
+    "name": "Cireș de mai",
+    "slug": "cires-de-mai",
+    "kind": "tip",
+    "photo": 3,
+    "manuscript": "Cireș de mai",
+    "status": "public"
+  },
+  {
+    "id": "cires--cires-galben",
+    "cat": "cires",
+    "name": "Cireș galben",
+    "slug": "cires-galben",
+    "kind": "tip",
+    "photo": 3,
+    "manuscript": "Cireș galben",
+    "status": "public"
+  },
+  {
+    "id": "migdal--de-marculesti",
+    "cat": "migdal",
+    "name": "De Mărculești",
+    "slug": "de-marculesti",
+    "kind": "tip",
+    "photo": 3,
+    "manuscript": "De Mărculești",
+    "status": "public"
+  },
+  {
+    "id": "smochin--smochin-galben",
+    "cat": "smochin",
+    "name": "Smochin galben",
+    "slug": "smochin-galben",
+    "kind": "tip",
+    "photo": 3,
+    "manuscript": "Smochin galben",
+    "status": "public"
+  },
+  {
+    "id": "tei--tei-de-floare",
+    "cat": "tei",
+    "name": "Tei de floare",
+    "slug": "tei-de-floare",
+    "kind": "tip",
+    "photo": 3,
+    "manuscript": "Tei de floare",
+    "status": "public"
+  },
+  {
+    "id": "mar--forma-columnara",
+    "cat": "mar",
+    "name": "Formă columnară",
+    "slug": "forma-columnara",
+    "kind": "forma",
+    "photo": 3,
+    "manuscript": "Formă columnară",
+    "status": "public"
+  },
+  {
+    "id": "par--forma-columnara",
+    "cat": "par",
+    "name": "Formă columnară",
+    "slug": "forma-columnara",
+    "kind": "forma",
+    "photo": 3,
+    "manuscript": "Formă columnară",
+    "status": "public"
+  },
+  {
+    "id": "cais--forma-columnara",
+    "cat": "cais",
+    "name": "Formă columnară",
+    "slug": "forma-columnara",
+    "kind": "forma",
+    "photo": 3,
+    "manuscript": "Formă columnară",
+    "status": "public"
+  },
+  {
+    "id": "visin--forma-columnara",
+    "cat": "visin",
+    "name": "Formă columnară",
+    "slug": "forma-columnara",
+    "kind": "forma",
+    "photo": 3,
+    "manuscript": "Formă columnară",
+    "status": "public"
+  },
+  {
+    "id": "trandafiri--trandafiri-de-luna",
+    "cat": "trandafiri",
+    "name": "Trandafiri de lună",
+    "slug": "trandafiri-de-luna",
+    "kind": "tip",
+    "photo": 4,
+    "manuscript": "Trandafiri de lună",
+    "status": "public"
+  },
+  {
+    "id": "trandafiri--trandafiri-urcatori",
+    "cat": "trandafiri",
+    "name": "Trandafiri urcători",
+    "slug": "trandafiri-urcatori",
+    "kind": "tip",
+    "photo": 4,
+    "manuscript": "Trandafiri urcători",
+    "status": "public"
+  },
+  {
+    "id": "mur--mur",
+    "cat": "mur",
+    "name": "Mur",
+    "slug": "mur",
+    "kind": "tip",
+    "photo": 4,
+    "manuscript": "Mur",
+    "status": "public"
+  },
+  {
+    "id": "coacaz--coacaz-rosu",
+    "cat": "coacaz",
+    "name": "Coacăz roșu",
+    "slug": "coacaz-rosu",
+    "kind": "tip",
+    "photo": 4,
+    "manuscript": "Coacăz roșu",
+    "status": "public"
+  },
+  {
+    "id": "coacaz--coacaz-negru",
+    "cat": "coacaz",
+    "name": "Coacăz negru",
+    "slug": "coacaz-negru",
+    "kind": "tip",
+    "photo": 4,
+    "manuscript": "Coacăz negru",
+    "status": "public"
+  },
+  {
+    "id": "coacaz--coacaz-alb",
+    "cat": "coacaz",
+    "name": "Coacăz alb",
+    "slug": "coacaz-alb",
+    "kind": "tip",
+    "photo": 4,
+    "manuscript": "Coacăz alb",
+    "status": "public"
+  },
+  {
+    "id": "nectarin--forma-columnara",
+    "cat": "nectarin",
+    "name": "Formă columnară",
+    "slug": "forma-columnara",
+    "kind": "forma",
+    "status": "public",
+    "confirmedAt": "2026-11-02",
+    "confirmation": "Tip descriptiv indicat în materialul transmis de proprietar, etichetat Nectarin Columnar; nu identifică un soi sau portaltoi.",
+    "description": "Forma de cultură se alege împreună cu soiul și portaltoiul. Spațiul necesar și tăierile se stabilesc după materialul ales, fără a deduce dimensiunile pomului dintr-o fotografie."
+  },
+  {
+    "id": "piersic--forma-pitica",
+    "cat": "piersic",
+    "name": "Piersic pitic",
+    "slug": "forma-pitica",
+    "kind": "forma",
+    "status": "public",
+    "confirmedAt": "2026-11-04",
+    "confirmation": "Imaginea transmisă de proprietar este etichetată Piersic Pitic. Utilizatorul a cerut încadrarea horticulturală corectă, pe baza surselor. Nu se atribuie soi sau portaltoi după fotografie.",
+    "description": "Piersic cu port compact, ales pentru spații mici sau pentru cultură în recipient. Forma pitică nu înseamnă formă columnară. Soiul, portaltoiul și dimensiunea la maturitate se verifică înainte de plantare; recipientul trebuie să aibă drenaj bun.",
+    "sources": [
+      {
+        "title": "RHS — Cultivarea piersicului, forme compacte și cultură în recipiente",
+        "url": "https://www.rhs.org.uk/fruit/peaches/grow-your-own"
+      }
+    ]
+  }
+]

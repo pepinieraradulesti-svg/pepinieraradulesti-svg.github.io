@@ -1,0 +1,58 @@
+name: Pepiniera Studio
+run-name: Studio ${{ inputs.mode }} ${{ inputs.operation_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Operația solicitată
+        type: choice
+        options: [publish, check]
+        default: publish
+      release_id:
+        description: Identificatorul comenzii private
+        type: string
+        required: false
+      operation_id:
+        description: Identificator unic al operației
+        type: string
+        required: false
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: pepiniera-studio-publisher
+  cancel-in-progress: false
+jobs:
+  publisher:
+    if: github.repository == 'pepinieraradulesti-svg/pepinieraradulesti-svg.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Instrumente media
+        run: |
+          if ! command -v ffmpeg >/dev/null; then sudo apt-get update -qq; sudo apt-get install -y ffmpeg fonts-liberation; fi
+      - name: Dependențe și teste izolate
+        working-directory: studio-publisher
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm test
+      - name: Verificare conexiune fără postări publice
+        if: inputs.mode == 'check'
+        working-directory: studio-publisher
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node check.mjs
+      - name: Publicare solicitată din aplicație
+        if: inputs.mode == 'publish'
+        working-directory: studio-publisher
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          STUDIO_COMMAND_RELEASE: ${{ inputs.release_id }}
+          STUDIO_OPERATION: ${{ inputs.operation_id }}
+        run: node run.mjs

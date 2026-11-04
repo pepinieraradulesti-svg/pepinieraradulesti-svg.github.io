@@ -1,0 +1,52 @@
+[
+  {
+    "id": "template-1",
+    "name": "Fructul vedetă",
+    "layout": 1
+  },
+  {
+    "id": "template-2",
+    "name": "Din pepinieră",
+    "layout": 2
+  },
+  {
+    "id": "template-3",
+    "name": "Video cinematic",
+    "layout": 3
+  },
+  {
+    "id": "template-4",
+    "name": "Pas cu pas",
+    "layout": 4
+  },
+  {
+    "id": "template-5",
+    "name": "Sfaturi utile",
+    "layout": 5
+  },
+  {
+    "id": "template-6",
+    "name": "Galerie premium",
+    "layout": 6
+  },
+  {
+    "id": "template-7",
+    "name": "Anotimpurile pepinierei",
+    "layout": 7
+  },
+  {
+    "id": "template-8",
+    "name": "Soiul săptămânii",
+    "layout": 8
+  },
+  {
+    "id": "template-9",
+    "name": "Anunț important",
+    "layout": 9
+  },
+  {
+    "id": "template-10",
+    "name": "Poveste din pepinieră",
+    "layout": 10
+  }
+]

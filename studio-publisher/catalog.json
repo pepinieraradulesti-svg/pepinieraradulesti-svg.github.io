@@ -1,0 +1,401 @@
+[
+  {
+    "id": "mar",
+    "name": "Măr",
+    "group": "semintoase",
+    "path": "/pomi-fructiferi/mar/",
+    "notes": [
+      [
+        "Polenizare",
+        "Alege soiuri compatibile cu înflorire suprapusă. La multe soiuri, un partener de polenizare este necesar pentru o recoltă bună; o altă specie fructiferă nu îl înlocuiește."
+      ],
+      [
+        "Loc și portaltoi",
+        "Soarele și drenajul bun susțin dezvoltarea. Portaltoiul schimbă vigoarea, distanța de plantare și uneori nevoia de tutore permanent; cere denumirea lui înainte să dimensionezi livada."
+      ],
+      [
+        "Coroană și fructe",
+        "Formează o coroană aerisită și urmărește încărcătura de fructe. Rărirea, unde este necesară, ajută la evitarea suprasolicitării ramurilor. Recoltarea și durata de păstrare diferă între soiuri."
+      ]
+    ],
+    "latin": "Malus domestica"
+  },
+  {
+    "id": "par",
+    "name": "Păr",
+    "group": "semintoase",
+    "path": "/pomi-fructiferi/par/",
+    "notes": [
+      [
+        "Polenizare",
+        "În general sunt utile două soiuri compatibile cu înflorire suprapusă. Verifică partenerul pentru soiul ales, chiar dacă în apropiere există deja un păr."
+      ],
+      [
+        "Sol și vigoare",
+        "Preferă locuri luminoase, calde și sol adânc, fără băltire. Portaltoii diferă ca vigoare și adaptare; compatibilitatea dintre soi și portaltoi trebuie verificată, mai ales la altoirea pe gutui."
+      ],
+      [
+        "Recoltare",
+        "Multe pere de toamnă se culeg înainte să fie complet moi și își încheie maturarea după recoltare. Momentul exact și păstrarea depind de soi; separă fructele lovite de cele pentru depozitare."
+      ]
+    ],
+    "latin": "Pyrus communis"
+  },
+  {
+    "id": "prun",
+    "name": "Prun",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/prun/",
+    "notes": [
+      [
+        "Alegerea locului",
+        "Un sol fertil, care drenează bine, și multă lumină sunt o bază bună. Evită depresiunile în care se acumulează aer rece și locurile permanent umede."
+      ],
+      [
+        "Polenizare",
+        "Există soiuri autofertile și soiuri care cer un partener compatibil. Verifică cerința și perioada de înflorire pentru combinația aleasă; informația generală despre specie nu este suficientă."
+      ],
+      [
+        "Îngrijire și cules",
+        "Păstrează coroana aerisită și elimină fructele afectate. Tăierile se adaptează vârstei și stării pomului; lucrările mari se planifică pe vreme potrivită. Culege etapizat, în funcție de maturare și utilizare."
+      ]
+    ],
+    "latin": "Prunus domestica"
+  },
+  {
+    "id": "cais",
+    "name": "Cais",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/cais/",
+    "notes": [
+      [
+        "Înflorire timpurie",
+        "Florile pot fi afectate de înghețurile târzii. Alege un loc în care aerul rece se poate scurge și evită amplasamentele joase, închise între obstacole."
+      ],
+      [
+        "Sol și apă",
+        "Caisul preferă mult soare și un teren care nu reține excesul de apă. Pomii tineri au nevoie de udări urmărite atent; băltirea și uscarea prelungită afectează rădăcinile."
+      ],
+      [
+        "Polenizare și coroană",
+        "Multe soiuri sunt autofertile, dar cerința se verifică pentru materialul ales. Tăierile trebuie să păstreze coroana luminoasă; momentul intervențiilor se adaptează condițiilor locale și sănătății pomului."
+      ]
+    ],
+    "latin": "Prunus armeniaca"
+  },
+  {
+    "id": "visin",
+    "name": "Vișin",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/visin/",
+    "notes": [
+      [
+        "Spațiu și lumină",
+        "Talia este în general mai redusă decât la cireș, dar depinde și de portaltoi. Un loc însorit favorizează coacerea; lasă acces în jurul coroanei pentru recoltare și îngrijire."
+      ],
+      [
+        "Polenizare",
+        "Multe soiuri sunt autofertile. Confirmă totuși cerințele soiului și nu confunda autofertilitatea cu o garanție de recoltă: frigul și ploile la înflorire pot afecta legarea."
+      ],
+      [
+        "Lemn roditor",
+        "Tipul de rodire diferă între soiuri, iar tăierea trebuie să păstreze creșteri sănătoase și să evite degarnisirea. Culege fructele cu grijă și folosește-le repede sau păstrează-le la rece."
+      ]
+    ],
+    "latin": "Prunus cerasus"
+  },
+  {
+    "id": "cires",
+    "name": "Cireș",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/cires/",
+    "notes": [
+      [
+        "Polenizare compatibilă",
+        "Numeroase soiuri au nevoie de un partener, în timp ce altele sunt autofertile. Suprapunerea înfloririi și compatibilitatea contează împreună; două nume diferite nu garantează rodirea."
+      ],
+      [
+        "Portaltoi și spațiu",
+        "Un cireș pe portaltoi viguros poate ocupa mult loc. Alege distanța după dimensiunea matură și forma de conducere, nu după mărimea puietului cumpărat."
+      ],
+      [
+        "Drenaj și recoltare",
+        "Evită solurile în care apa stagnează. Ploile apropiate recoltării pot favoriza crăparea fructelor la unele soiuri. Dacă folosești plase împotriva păsărilor, montează-le sigur și verifică-le periodic."
+      ]
+    ],
+    "latin": "Prunus avium"
+  },
+  {
+    "id": "piersic",
+    "name": "Piersic",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/piersic/",
+    "notes": [
+      [
+        "Soare și sol",
+        "Alege un amplasament cald, luminos și bine drenat. Florile sunt vulnerabile la înghețurile târzii; adăpostul de vânt nu trebuie să blocheze circulația aerului."
+      ],
+      [
+        "Tăieri și încărcătură",
+        "Piersicul rodește pe creșteri din anul precedent, de aceea reînnoirea lemnului roditor contează. Rărirea fructelor se adaptează vigoarei și încărcăturii, pentru a nu suprasolicita ramurile."
+      ],
+      [
+        "Sănătatea frunzelor",
+        "Urmărește bășicarea frunzelor și alte semne de afectare. Identifică problema înainte de intervenție; recomandările de tratament se stabilesc pentru situația din teren. Majoritatea soiurilor sunt autofertile."
+      ]
+    ],
+    "latin": "Prunus persica"
+  },
+  {
+    "id": "nectarin",
+    "name": "Nectarină",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/nectarin/",
+    "notes": [
+      [
+        "Rudă cu piersicul",
+        "Nectarina este o formă de piersic cu pieliță netedă. Preferă soare, căldură și sol bine drenat; un loc rece sau umed poate limita coacerea și sănătatea pomului."
+      ],
+      [
+        "Coroană și rod",
+        "Ca la piersic, se urmărește reînnoirea creșterilor roditoare. Lumina în coroană și echilibrarea încărcăturii de fructe ajută; nu tăia după o schemă universală pentru toți pomii."
+      ],
+      [
+        "Îngrijire atentă",
+        "Menține o umiditate echilibrată în sol și urmărește frunzele primăvara. Fructele sunt sensibile la lovire; momentul culesului și comportarea la păstrare se verifică pentru soiul concret."
+      ]
+    ],
+    "latin": "Prunus persica var. nucipersica"
+  },
+  {
+    "id": "migdal",
+    "name": "Migdal",
+    "group": "nucifere",
+    "path": "/pomi-fructiferi/migdal/",
+    "notes": [
+      [
+        "Un loc cald",
+        "Migdalul preferă mult soare și drenaj bun. Înflorirea timpurie îl expune la înghețuri; alegerea materialului trebuie raportată la microclimatul grădinii."
+      ],
+      [
+        "Polenizare",
+        "Multe soiuri cer polenizare încrucișată, dar există și soiuri autofertile. Cere cerințele materialului ales și un partener compatibil, cu înflorire suprapusă, unde este necesar."
+      ],
+      [
+        "Încadrare și recoltare",
+        "Este o specie din genul Prunus, familia Rosaceae, inclusă în grupa pomicolă a nuciferelor pentru miez. La maturare, învelișul exterior se desface; uscarea și depozitarea aerisită ajută păstrarea."
+      ]
+    ],
+    "latin": "Prunus dulcis"
+  },
+  {
+    "id": "gutui",
+    "name": "Gutui",
+    "group": "semintoase",
+    "path": "/pomi-fructiferi/gutui/",
+    "notes": [
+      [
+        "Loc și sol",
+        "Alege un teren fertil, cu umiditate relativ constantă și drenaj bun. Soarele ajută maturarea fructelor; evită locurile unde se adună aerul rece."
+      ],
+      [
+        "Polenizare",
+        "Gutuiul este în general autofertil. Activitatea insectelor la înflorire rămâne utilă, iar alegerea materialului trebuie adaptată condițiilor locale."
+      ],
+      [
+        "Recoltare și folosire",
+        "Culege fructele când capătă culoarea și aroma caracteristice. Se folosesc frecvent la compot, peltea și coacere; păstrează-le fără lovituri, într-un loc aerisit."
+      ]
+    ],
+    "latin": "Cydonia oblonga"
+  },
+  {
+    "id": "nuc",
+    "name": "Nuc",
+    "group": "nucifere",
+    "path": "/nucifere/nuc/",
+    "notes": [
+      [
+        "Planificarea spațiului",
+        "Alege un sol adânc, bine drenat și un amplasament luminos. Calculează distanța față de clădiri și alte plante după dimensiunile la maturitate, nu după puiet."
+      ],
+      [
+        "Polenizare prin vânt",
+        "Florile masculine și feminine de pe același pom pot avea perioade diferite de maturare. Compatibilitatea și suprapunerea înfloririi contează când alegi pomii."
+      ],
+      [
+        "Îngrijire și recoltare",
+        "Susține prinderea prin udări adaptate solului. Culege nucile când învelișul verde se desface, apoi usucă miezul în coajă într-un spațiu aerisit."
+      ]
+    ],
+    "latin": "Juglans regia"
+  },
+  {
+    "id": "alun",
+    "name": "Alun",
+    "group": "nucifere",
+    "path": "/nucifere/alun/",
+    "notes": [
+      [
+        "Loc și formă",
+        "Se dezvoltă în soluri fertile, bine drenate. Lumina favorizează rodirea; păstrează acces pentru recoltare și limitează aglomerarea tufei."
+      ],
+      [
+        "Parteneri de polenizare",
+        "Polenul este purtat de vânt. Pentru rodire sigură se aleg soiuri compatibile, cu înflorire suprapusă; două plante identice nu rezolvă automat polenizarea."
+      ],
+      [
+        "Întreținerea tufei",
+        "Îndepărtează drajonii nedoriți și reînnoiește treptat tulpinile îmbătrânite. Strânge fructele coapte la timp și usucă-le înainte de depozitare."
+      ]
+    ],
+    "latin": "Corylus avellana"
+  },
+  {
+    "id": "smochin",
+    "name": "Smochin",
+    "group": "alti-pomi",
+    "path": "/pomi-fructiferi/smochin/",
+    "notes": [
+      [
+        "Microclimat",
+        "Alege mult soare, adăpost de vânt și drenaj bun. În zonele cu ierni aspre sunt importante selecția materialului și o protecție potrivită; rezistența la frig diferă."
+      ],
+      [
+        "Sol și udare",
+        "În recipient, folosește un vas stabil cu drenaj și urmărește atent umiditatea. Evită alternanțele mari între uscăciune și exces de apă în perioada creșterii fructelor."
+      ],
+      [
+        "Rodire și cules",
+        "Există tipuri de smochin cu cerințe diferite de polenizare. Verifică tipul ales pentru cultura locală. Culege fructele moi, la maturitate, deoarece nu continuă să se coacă bine după recoltare."
+      ]
+    ],
+    "latin": "Ficus carica"
+  },
+  {
+    "id": "zmeur",
+    "name": "Zmeur",
+    "group": "arbusti",
+    "path": "/arbusti-fructiferi/zmeur/",
+    "notes": [
+      [
+        "Sol și susținere",
+        "Preferă sol bogat în materie organică, reavăn și drenat. Susținerea tulpinilor și delimitarea rândului ușurează îngrijirea și limitează răspândirea drajonilor."
+      ],
+      [
+        "Tăiere după tipul de rodire",
+        "La tipurile de vară se elimină tulpinile care au rodit, păstrând creșterile pentru anul următor. Tipurile remontante se conduc diferit; identifică tipul înainte să tai."
+      ],
+      [
+        "Apă și recoltare",
+        "Udă la bază în perioadele uscate și protejează solul cu mulci. Culege des fructele coapte; sunt fragile și au o păstrare scurtă."
+      ]
+    ],
+    "latin": "Rubus idaeus"
+  },
+  {
+    "id": "mur",
+    "name": "Mur",
+    "group": "arbusti",
+    "path": "/arbusti-fructiferi/mur/",
+    "notes": [
+      [
+        "Spațiu pentru lăstari",
+        "Alege un teren luminos și bine drenat. Un spalier solid separă lăstarii tineri de cei roditori și păstrează fructele accesibile."
+      ],
+      [
+        "Reînnoirea tulpinilor",
+        "La tipurile obișnuite, tulpinile rodesc în al doilea an și se îndepărtează după recoltare. Există și tipuri cu alt ritm de rodire; adaptează tăierea la materialul ales."
+      ],
+      [
+        "Recoltare",
+        "Culoarea închisă singură nu garantează maturitatea. Culege fructele care se desprind ușor și evită strivirea lor în recipiente adânci."
+      ]
+    ],
+    "latin": "Rubus fruticosus agg."
+  },
+  {
+    "id": "coacaz",
+    "name": "Coacăz",
+    "group": "arbusti",
+    "path": "/arbusti-fructiferi/coacaz/",
+    "notes": [
+      [
+        "Loc și apă",
+        "Un sol fertil, reavăn și drenat susține creșterea. În zonele foarte calde poate fi utilă protecția față de arșița puternică, fără a lipsi planta de lumină."
+      ],
+      [
+        "Diferențe între tipuri",
+        "Coacăzul negru rodește bine pe lemn tânăr; la coacăzul roșu și alb se păstrează și formațiuni roditoare pe lemn mai vechi. Identifică tipul înainte de tăiere."
+      ],
+      [
+        "Recoltare și aerisire",
+        "Menține tufa aerisită și culege ciorchinii la maturitatea potrivită utilizării. Plasele de protecție se montează astfel încât să nu prindă păsările."
+      ]
+    ],
+    "latin": "Ribes spp."
+  },
+  {
+    "id": "piersic-plat",
+    "name": "Piersic plat",
+    "group": "samburoase",
+    "path": "/pomi-fructiferi/piersic-plat/",
+    "notes": [
+      [
+        "Soare și sol",
+        "Alege un amplasament cald, luminos și bine drenat. Florile sunt vulnerabile la înghețurile târzii; adăpostul de vânt nu trebuie să blocheze circulația aerului."
+      ],
+      [
+        "Tăieri și încărcătură",
+        "Piersicul rodește pe creșteri din anul precedent, de aceea reînnoirea lemnului roditor contează. Rărirea fructelor se adaptează vigoarei și încărcăturii, pentru a nu suprasolicita ramurile."
+      ],
+      [
+        "Sănătatea frunzelor",
+        "Urmărește bășicarea frunzelor și alte semne de afectare. Identifică problema înainte de intervenție; recomandările de tratament se stabilesc pentru situația din teren. Majoritatea soiurilor sunt autofertile."
+      ]
+    ],
+    "latin": "Prunus persica"
+  },
+  {
+    "id": "tei",
+    "name": "Tei",
+    "group": "ornamentale",
+    "path": "/plante-ornamentale/tei/",
+    "notes": [
+      [
+        "Spațiu pentru coroană",
+        "Păstrează distanță față de clădiri și instalații. Talia diferă între specii; un puiet mic poate deveni un arbore cu o coroană amplă."
+      ],
+      [
+        "Plantare și apă",
+        "Pregătește un teren fără băltire. Udă pomii tineri în perioadele uscate și păstrează coletul la nivelul potrivit."
+      ],
+      [
+        "Îngrijire",
+        "Formează treptat o structură echilibrată. Evită scurtările severe ale coroanei și verifică legăturile tutorilor."
+      ]
+    ],
+    "latin": "Tilia spp."
+  },
+  {
+    "id": "trandafiri",
+    "name": "Trandafiri",
+    "group": "ornamentale",
+    "path": "/plante-ornamentale/trandafiri/",
+    "notes": [
+      [
+        "Soare și aer",
+        "Un loc luminos, cu aerisire bună și sol fertil, drenat, susține înflorirea. Udă la bază, fără a menține frunzișul umed."
+      ],
+      [
+        "Formă și susținere",
+        "Condu lăstarii trandafirilor urcători pe o structură stabilă. Spațierea și tăierile se adaptează tipului și vigorii plantei."
+      ],
+      [
+        "Înflorire și întreținere",
+        "Îndepărtează lemnul uscat și urmărește sănătatea frunzelor. Tăierea diferă între trandafirii cu înflorire unică și cei cu înflorire repetată."
+      ]
+    ],
+    "latin": "Rosa spp."
+  }
+]
